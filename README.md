@@ -24,7 +24,7 @@
 
 **SqlServerMcp** is an MCP (Model Context Protocol) server that enables language models (LLMs) to interact securely with SQL Server databases. It exposes tools for exploring schemas, executing SELECT queries, and managing business rules.
 
-## ? Features
+##  Features
 
 -  **Schema Exploration** - Get the complete structure of your database
 -  **Safe Queries** - Only allows SELECT operations (read-only)
