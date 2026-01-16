@@ -1,0 +1,41 @@
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.user
+*.suo
+*.cache
+*.log
+
+# Visual Studio
+.vs/
+*.vsidx
+*.lock.json
+
+# IDE
+.idea/
+*.sln.iml
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# NuGet
+*.nupkg
+packages/
+
+# Sensitive files - DO NOT COMMIT
+appsettings.json
+appsettings.*.json
+!appsettings.example.json
+
+# User-specific files
+*.rsuser
+*.userosscache
+
+# Publish profiles
+PublishProfiles/
