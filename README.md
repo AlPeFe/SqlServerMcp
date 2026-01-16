@@ -20,19 +20,19 @@
 
 </div>
 
-## ?? Description
+## Description
 
 **SqlServerMcp** is an MCP (Model Context Protocol) server that enables language models (LLMs) to interact securely with SQL Server databases. It exposes tools for exploring schemas, executing SELECT queries, and managing business rules.
 
 ## ? Features
 
-- ?? **Schema Exploration** - Get the complete structure of your database
-- ?? **Safe Queries** - Only allows SELECT operations (read-only)
-- ?? **Business Rules** - Define and expose domain rules for better context
-- ?? **High Performance** - Published as a single, self-contained executable
-- ?? **STDIO Transport** - Standard communication with MCP clients
+-  **Schema Exploration** - Get the complete structure of your database
+-  **Safe Queries** - Only allows SELECT operations (read-only)
+-  **Business Rules** - Define and expose domain rules for better context
+-  **High Performance** - Published as a single, self-contained executable
+-  **STDIO Transport** - Standard communication with MCP clients
 
-## ??? Technologies Used
+##  Technologies Used
 
 | Technology | Version | Description |
 |------------|---------|-------------|
@@ -41,7 +41,7 @@
 | **Microsoft.Data.SqlClient** | 7.0.0-preview3 | Modern SQL Server client |
 | **Microsoft.Extensions.Hosting** | 8.0.1 | .NET generic hosting |
 
-## ?? Installation
+##  Installation
 
 ### Prerequisites
 
@@ -69,7 +69,7 @@ dotnet publish -c Release -r osx-arm64
 dotnet publish -c Release -r linux-x64
 ```
 
-## ?? Configuration
+## Configuration
 
 1. Copy `appsettings.example.json` to `appsettings.json`:
 
@@ -102,7 +102,7 @@ cp appsettings.example.json appsettings.json
 }
 ```
 
-## ?? Available Tools
+##  Available Tools
 
 | Tool | Description |
 |------|-------------|
@@ -110,13 +110,13 @@ cp appsettings.example.json appsettings.json
 | `get_business_rules` | Returns the configured business rules |
 | `execute_read_query` | Executes SELECT queries safely |
 
-## ?? MCP Resources
+##  MCP Resources
 
 | Resource | URI | Description |
 |----------|-----|-------------|
 | Business Rules | `db://business-rules` | Domain rules in JSON format |
 
-## ?? Usage
+##  Usage
 
 ### Integration with MCP Clients
 
@@ -139,28 +139,8 @@ Configure your MCP client to use this server:
 2. Then uses `get_database_schema` to explore the structure
 3. Finally executes queries with `execute_read_query`
 
-## ?? Project Structure
 
-```
-SqlServerMcp/
-??? ?? Program.cs              # Entry point
-??? ?? Tools/
-?   ??? SqlTools.cs            # MCP tools
-??? ?? Resources/
-?   ??? SqlResources.cs        # MCP resources
-??? ?? Models/
-?   ??? BusinessRulesConfig.cs # Configuration models
-??? ?? appsettings.json         # Configuration
-??? ?? SqlServerMcp.csproj      # Project file
-```
-
-## ?? Security
-
-- **Read-only access**: Only SELECT queries are allowed
-- **No DDL/DML**: INSERT, UPDATE, DELETE, DROP operations are blocked
-- **Business rules isolation**: Rules are defined in configuration, not exposed to modification
-
-## ?? Contributing
+##  Contributing
 
 Contributions are welcome! Please open an issue or pull request.
 
@@ -170,15 +150,13 @@ Contributions are welcome! Please open an issue or pull request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## ?? License
+##  License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
-
-**Made with ?? using .NET and MCP**
 
 [? Back to top](#?-sqlservermcp)
 
