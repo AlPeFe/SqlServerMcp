@@ -1,6 +1,6 @@
 <div align="center">
 
-# ??? SqlServerMcp
+# SqlServerMcp
 
 ### **Model Context Protocol Server for SQL Server**
 
